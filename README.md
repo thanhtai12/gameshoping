@@ -12,13 +12,11 @@
 4. 1 trang giới  thiệu chi tiết về một sản phẩm trong shop
 ![image](https://user-images.githubusercontent.com/74332737/170117183-a5ce6392-290b-4565-bab0-9d4300c6228a.png)
 
-6. Tìm kiếm sản phẩm và phân trang
-![image](https://user-images.githubusercontent.com/72543241/169780615-516046aa-950c-4c01-8435-a420c17acfc6.png)
-
-# Các tính năng ở Admin Panel
+# Các tính năng của web
 1. Thêm, xóa, sửa
-2. Tìm kiếm đơn hàng theo tên
-3. Tìm kiếm theo giá tiền
-4. Tìm kiếm theo ngày tạo
-5. Lọc theo danh mục
-![image](https://user-images.githubusercontent.com/72543241/169781085-18f77d68-4c55-47b6-8b14-e97ef23d200a.png)
+2. thêm sản phẩm vào menu sản phẩm khi thêm ở trang admin
+![image](https://user-images.githubusercontent.com/74332737/170118603-4c031a0c-fae9-498b-a65a-22c6a47e64ca.png)
+![image](https://user-images.githubusercontent.com/74332737/170118763-ebec3796-9e61-4a83-9244-c70a5ce73932.png)
+![image](https://user-images.githubusercontent.com/74332737/170119308-940ab37e-8b3c-42fe-931a-8dfcd600df7e.png)
+![image](https://user-images.githubusercontent.com/74332737/170119378-b72c35eb-ad61-4809-b017-361730d73cae.png)
+![image](https://user-images.githubusercontent.com/74332737/170119468-1a217614-c556-43fa-9a74-9c716dda5ac9.png)
