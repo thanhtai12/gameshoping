@@ -1,0 +1,143 @@
+﻿@model GameMasster.Models.GameGenreViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<header class="header">
+
+    <a class="logo" asp-area="" asp-controller="Gamemassters" asp-action="Index">
+        <img src="https://i.imgur.com/5bIRVYF.png" alt="logo">
+    </a>
+    <a class="btn" asp-area="" asp-controller="Home" asp-action="menu"> menu Game </a>
+</header>
+
+<h1 class="heading">List<span> Game</span> </h1>
+
+<p>
+    <a class="btn" asp-action="Create">thêm game </a>
+</p>
+
+<form asp-controller="Gamemassters" asp-action="Index" method="get">
+    <p>
+        <select asp-for="GameGenre" asp-items="Model.Genres">
+            <option value="">All</option>
+        </select>
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Game[0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Game[0].ReleaseDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Game[0].Genre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Game[0].Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Game[0].Rating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Game[0].Link)
+            </th>
+
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Game)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Link)
+            </td>
+
+            <td>
+                <a class="btn-e" asp-action="Edit" asp-route-id="@item.Id">sửa</a> |
+                <a class="btn-e" asp-action="Details" asp-route-id="@item.Id">tông tin</a> |
+                <a class="btn-e" asp-action="Delete" asp-route-id="@item.Id">xóa</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+<style>
+   
+:root {
+    --main-color: #007FFF;
+    --black: #13131a;
+    --bg: #010103;
+    --border: .1rem solid rgba(255,255,255,.3);
+}
+body{
+    margin-left:20px;
+}
+    .heading {
+        text-align: center;
+        color: #ee1f78;
+        text-transform: uppercase;
+        padding-bottom: 3.5rem;
+        font-size: 4rem;
+    }
+
+        .heading span {
+            color: var(--main-color);
+            text-transform: uppercase;
+        }
+    .btn {
+        color: #fff;
+        background: var(--main-color);
+    }
+
+        .btn:hover {
+            background:#ee1f78;
+            letter-spacing: .2rem;
+        }
+
+    .btn-e {
+        color: #fff;
+        background: var(--main-color);
+    }
+       .btn-e:hover {
+            background: #ee1f78;
+        }
+        .header {
+            height: 50px;
+            background: var(--bg);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 7%;
+            border-bottom: var(--border);
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .header .logo img {
+            height: 90px;
+        }
+</style>
