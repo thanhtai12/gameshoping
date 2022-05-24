@@ -1,6 +1,6 @@
 # gameshoping
-1. Thêm sản phẩm vào giỏ hàng và thanh toán
-![localhost_44384_](https://user-images.githubusercontent.com/74332737/170114831-319632a8-cccb-4e90-9b3d-8d1a3ea2049d.png)
+1. trang chủ trang web
+![image](https://user-images.githubusercontent.com/74332737/170115124-b68138e1-820a-4841-9189-2afcbba0b967.png)
 3. Tìm kiếm sản phẩm
 4. Phân trang
 ![image](https://user-images.githubusercontent.com/72543241/169779590-ca5af512-6212-4dde-82d3-2404b1875289.png)
